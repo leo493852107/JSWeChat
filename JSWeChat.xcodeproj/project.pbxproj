@@ -1,0 +1,449 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B3DF15311E8298F1001EA6F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DF15301E8298F1001EA6F6 /* main.m */; };
+		B3DF153C1E8298F1001EA6F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3DF153B1E8298F1001EA6F6 /* Assets.xcassets */; };
+		B3DF154E1E829BE6001EA6F6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DF15481E829BE6001EA6F6 /* AppDelegate.m */; };
+		B3DF154F1E829BE6001EA6F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3DF154A1E829BE6001EA6F6 /* LaunchScreen.storyboard */; };
+		B3DF15501E829BE6001EA6F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3DF154B1E829BE6001EA6F6 /* Main.storyboard */; };
+		B3DF155E1E838FE6001EA6F6 /* JSNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DF155D1E838FE6001EA6F6 /* JSNetworkManager.m */; };
+		B3DF15631E839AEA001EA6F6 /* JSLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DF15611E839AEA001EA6F6 /* JSLoginVC.m */; };
+		B3DF15661E839AFD001EA6F6 /* JSLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DF15651E839AFD001EA6F6 /* JSLoginView.m */; };
+		F4EA31C765689E496534329D /* libPods-JSWeChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A74D8E8D9613BAB91D256B79 /* libPods-JSWeChat.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3A9318C7F426A7C265A65F85 /* Pods-JSWeChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSWeChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JSWeChat/Pods-JSWeChat.debug.xcconfig"; sourceTree = "<group>"; };
+		A74D8E8D9613BAB91D256B79 /* libPods-JSWeChat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JSWeChat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3DF152C1E8298F1001EA6F6 /* JSWeChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSWeChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3DF15301E8298F1001EA6F6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B3DF153B1E8298F1001EA6F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B3DF15401E8298F1001EA6F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3DF15471E829BE6001EA6F6 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B3DF15481E829BE6001EA6F6 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B3DF154A1E829BE6001EA6F6 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B3DF154B1E829BE6001EA6F6 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		B3DF15521E829C3F001EA6F6 /* JSWeChatPCH.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSWeChatPCH.pch; sourceTree = "<group>"; };
+		B3DF155C1E838FE6001EA6F6 /* JSNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSNetworkManager.h; sourceTree = "<group>"; };
+		B3DF155D1E838FE6001EA6F6 /* JSNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSNetworkManager.m; sourceTree = "<group>"; };
+		B3DF15601E839AEA001EA6F6 /* JSLoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSLoginVC.h; sourceTree = "<group>"; };
+		B3DF15611E839AEA001EA6F6 /* JSLoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSLoginVC.m; sourceTree = "<group>"; };
+		B3DF15641E839AFD001EA6F6 /* JSLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSLoginView.h; sourceTree = "<group>"; };
+		B3DF15651E839AFD001EA6F6 /* JSLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSLoginView.m; sourceTree = "<group>"; };
+		C63FBD82A0C401897E872ECF /* Pods-JSWeChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSWeChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-JSWeChat/Pods-JSWeChat.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B3DF15291E8298F1001EA6F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4EA31C765689E496534329D /* libPods-JSWeChat.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02CC02D3B8B2093081237691 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3A9318C7F426A7C265A65F85 /* Pods-JSWeChat.debug.xcconfig */,
+				C63FBD82A0C401897E872ECF /* Pods-JSWeChat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		034C8D852E5DED43F6081120 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A74D8E8D9613BAB91D256B79 /* libPods-JSWeChat.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B3DF15231E8298F1001EA6F6 = {
+			isa = PBXGroup;
+			children = (
+				B3DF152E1E8298F1001EA6F6 /* JSWeChat */,
+				B3DF152D1E8298F1001EA6F6 /* Products */,
+				02CC02D3B8B2093081237691 /* Pods */,
+				034C8D852E5DED43F6081120 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B3DF152D1E8298F1001EA6F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B3DF152C1E8298F1001EA6F6 /* JSWeChat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B3DF152E1E8298F1001EA6F6 /* JSWeChat */ = {
+			isa = PBXGroup;
+			children = (
+				B3DF15461E829BE6001EA6F6 /* Classes */,
+				B3DF153B1E8298F1001EA6F6 /* Assets.xcassets */,
+				B3DF15401E8298F1001EA6F6 /* Info.plist */,
+				B3DF152F1E8298F1001EA6F6 /* Supporting Files */,
+			);
+			path = JSWeChat;
+			sourceTree = "<group>";
+		};
+		B3DF152F1E8298F1001EA6F6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B3DF15301E8298F1001EA6F6 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B3DF15461E829BE6001EA6F6 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B3DF155B1E838FE6001EA6F6 /* Tools */,
+				B3DF15531E82A137001EA6F6 /* ViewControllers */,
+				B3DF15491E829BE6001EA6F6 /* Others */,
+				B3DF15471E829BE6001EA6F6 /* AppDelegate.h */,
+				B3DF15481E829BE6001EA6F6 /* AppDelegate.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		B3DF15491E829BE6001EA6F6 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				B3DF154A1E829BE6001EA6F6 /* LaunchScreen.storyboard */,
+				B3DF154B1E829BE6001EA6F6 /* Main.storyboard */,
+				B3DF15521E829C3F001EA6F6 /* JSWeChatPCH.pch */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		B3DF15531E82A137001EA6F6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B3DF15541E82A137001EA6F6 /* Login */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B3DF15541E82A137001EA6F6 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B3DF155F1E839AEA001EA6F6 /* Controller */,
+				B3DF15621E839AEA001EA6F6 /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		B3DF155B1E838FE6001EA6F6 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				B3DF155C1E838FE6001EA6F6 /* JSNetworkManager.h */,
+				B3DF155D1E838FE6001EA6F6 /* JSNetworkManager.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		B3DF155F1E839AEA001EA6F6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B3DF15601E839AEA001EA6F6 /* JSLoginVC.h */,
+				B3DF15611E839AEA001EA6F6 /* JSLoginVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B3DF15621E839AEA001EA6F6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B3DF15641E839AFD001EA6F6 /* JSLoginView.h */,
+				B3DF15651E839AFD001EA6F6 /* JSLoginView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B3DF152B1E8298F1001EA6F6 /* JSWeChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3DF15431E8298F1001EA6F6 /* Build configuration list for PBXNativeTarget "JSWeChat" */;
+			buildPhases = (
+				5CEB54EB572AECB8E5AE3BDE /* [CP] Check Pods Manifest.lock */,
+				B3DF15281E8298F1001EA6F6 /* Sources */,
+				B3DF15291E8298F1001EA6F6 /* Frameworks */,
+				B3DF152A1E8298F1001EA6F6 /* Resources */,
+				24067F114CDFCF6FE12D9AD1 /* [CP] Embed Pods Frameworks */,
+				8CFA1E1EC6005562FF975D6A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JSWeChat;
+			productName = JSWeChat;
+			productReference = B3DF152C1E8298F1001EA6F6 /* JSWeChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B3DF15241E8298F1001EA6F6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JS;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "李建舜";
+				TargetAttributes = {
+					B3DF152B1E8298F1001EA6F6 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 3398J37KJL;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B3DF15271E8298F1001EA6F6 /* Build configuration list for PBXProject "JSWeChat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B3DF15231E8298F1001EA6F6;
+			productRefGroup = B3DF152D1E8298F1001EA6F6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B3DF152B1E8298F1001EA6F6 /* JSWeChat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B3DF152A1E8298F1001EA6F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3DF15501E829BE6001EA6F6 /* Main.storyboard in Resources */,
+				B3DF153C1E8298F1001EA6F6 /* Assets.xcassets in Resources */,
+				B3DF154F1E829BE6001EA6F6 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24067F114CDFCF6FE12D9AD1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JSWeChat/Pods-JSWeChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5CEB54EB572AECB8E5AE3BDE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8CFA1E1EC6005562FF975D6A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JSWeChat/Pods-JSWeChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B3DF15281E8298F1001EA6F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3DF154E1E829BE6001EA6F6 /* AppDelegate.m in Sources */,
+				B3DF15311E8298F1001EA6F6 /* main.m in Sources */,
+				B3DF155E1E838FE6001EA6F6 /* JSNetworkManager.m in Sources */,
+				B3DF15661E839AFD001EA6F6 /* JSLoginView.m in Sources */,
+				B3DF15631E839AEA001EA6F6 /* JSLoginVC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B3DF15411E8298F1001EA6F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B3DF15421E8298F1001EA6F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B3DF15441E8298F1001EA6F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A9318C7F426A7C265A65F85 /* Pods-JSWeChat.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3398J37KJL;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/JSWeChat/Classes/Others/JSWechatPCH.pch";
+				INFOPLIST_FILE = JSWeChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.leo.JSWeChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B3DF15451E8298F1001EA6F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C63FBD82A0C401897E872ECF /* Pods-JSWeChat.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3398J37KJL;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/JSWeChat/Classes/Others/JSWechatPCH.pch";
+				INFOPLIST_FILE = JSWeChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.leo.JSWeChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B3DF15271E8298F1001EA6F6 /* Build configuration list for PBXProject "JSWeChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3DF15411E8298F1001EA6F6 /* Debug */,
+				B3DF15421E8298F1001EA6F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3DF15431E8298F1001EA6F6 /* Build configuration list for PBXNativeTarget "JSWeChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3DF15441E8298F1001EA6F6 /* Debug */,
+				B3DF15451E8298F1001EA6F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B3DF15241E8298F1001EA6F6 /* Project object */;
+}
