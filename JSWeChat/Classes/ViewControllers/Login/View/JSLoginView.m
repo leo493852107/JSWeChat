@@ -21,6 +21,7 @@
         _loginBtn.backgroundColor = [UIColor greenColor];
         [_loginBtn.layer setMasksToBounds:YES];
         [_loginBtn.layer setCornerRadius:6.0];
+        [_loginBtn addTarget:self action:@selector(loginButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _loginBtn;
 }
@@ -79,14 +80,22 @@
 
 #pragma mark - 监听事件
 - (void)registerButtonClick:(UIButton *)button {
-    JSLog(@"%s", __func__);
+
     if (self.registerBlock) {
         self.registerBlock(button);
-        JSLog(@"%s", __func__);
+        
     }
     
 }
 
+- (void)loginButtonClick:(UIButton *)button {
+
+    if (self.loginBlock) {
+        self.loginBlock(button);
+        
+    }
+    
+}
 
 
 

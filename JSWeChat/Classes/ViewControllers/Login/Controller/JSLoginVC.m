@@ -35,12 +35,31 @@
     _loginView = [[JSLoginView alloc] initWithFrame:[UIScreen mainScreen].bounds];
     [self.view addSubview:_loginView];
     
+    __weak typeof(_loginView) weakSelf = _loginView;
+    _loginView.registerBlock = ^(UIButton *sender) {
+        EMError *error = nil;
+        BOOL isSuccess = [[EaseMob sharedInstance].chatManager registerNewAccount:weakSelf.usernameTextField.text password:weakSelf.passwordTextField.text error:&error];
+        if (isSuccess) {
+            JSLog(@"注册成功");
+        } else {
+            JSLog(@"注册失败");
+        }
+    };
     
-//    _loginView.registerBlock = ^(UIButton *sender) {
-//        JSLog(@"111");
-//    };
+    _loginView.loginBlock = ^(UIButton *sender) {
+        
+        EMError *error = nil;
+        NSDictionary *loginInfo = [[EaseMob sharedInstance].chatManager loginWithUsername:weakSelf.usernameTextField.text password:weakSelf.passwordTextField.text error:&error];
+        if (!error && loginInfo) {
+            JSLog(@"登录成功");
+        } else {
+            JSLog(@"登录失败");
+        }
+
+    };
     
 }
+
 
 
 - (void)didReceiveMemoryWarning {

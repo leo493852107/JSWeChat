@@ -21,7 +21,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    [[EaseMob sharedInstance] registerSDKWithAppKey:kEaseMobKey apnsCertName:nil otherConfig:nil];
+    [[EaseMob sharedInstance] registerSDKWithAppKey:kEaseMobKey apnsCertName:nil otherConfig:@{kSDKConfigEnableConsoleLogger:[NSNumber numberWithBool:NO]}];
     [[EaseMob sharedInstance] application:application didFinishLaunchingWithOptions:launchOptions];
     
     
