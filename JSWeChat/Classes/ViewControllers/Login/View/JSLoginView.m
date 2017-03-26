@@ -6,12 +6,38 @@
 //  Copyright © 2017 李建舜. All rights reserved.
 //
 
+#define marginLeftRight 20
+
 #import "JSLoginView.h"
 
 @implementation JSLoginView
 
-
 #pragma mark - 懒加载
+- (UIButton *)loginBtn {
+    if (!_loginBtn) {
+        _loginBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_loginBtn setTitle:@"登录" forState:UIControlStateNormal];
+        [_loginBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        _loginBtn.backgroundColor = [UIColor greenColor];
+        [_loginBtn.layer setMasksToBounds:YES];
+        [_loginBtn.layer setCornerRadius:6.0];
+    }
+    return _loginBtn;
+}
+
+- (UIButton *)registerBtn {
+    if (!_registerBtn) {
+        _registerBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_registerBtn setTitle:@"注册" forState:UIControlStateNormal];
+        [_registerBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        _registerBtn.backgroundColor = [UIColor blueColor];
+        [_registerBtn.layer setMasksToBounds:YES];
+        [_registerBtn.layer setCornerRadius:6.0];
+        [_registerBtn addTarget:self action:@selector(registerButtonClick:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _registerBtn;
+}
+
 - (UITextField *)usernameTextField {
     if (!_usernameTextField) {
         _usernameTextField = [[UITextField alloc] init];
@@ -51,12 +77,24 @@
     return _passwordLabel;
 }
 
+#pragma mark - 监听事件
+- (void)registerButtonClick:(UIButton *)button {
+    JSLog(@"%s", __func__);
+    if (self.registerBlock) {
+        self.registerBlock(button);
+        JSLog(@"%s", __func__);
+    }
+    
+}
+
+
+
 
 #pragma mark - 初始化
 - (instancetype)initWithFrame:(CGRect)frame {
     if ([super initWithFrame:frame]) {
         [self initUI];
-    }
+}
     return self;
 }
 
@@ -68,12 +106,14 @@
     [self addSubview:self.passwordLabel];
     [self addSubview:self.usernameTextField];
     [self addSubview:self.passwordTextField];
+    [self addSubview:self.loginBtn];
+    [self addSubview:self.registerBtn];
     
     
     
     [_usernameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(self).offset(100);
-        make.left.mas_equalTo(self).offset(20);
+        make.left.mas_equalTo(self).offset(marginLeftRight);
         make.width.mas_equalTo(50);
         make.height.mas_equalTo(30);
     }];
@@ -81,13 +121,13 @@
     [_usernameTextField mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(_usernameLabel);
         make.left.mas_equalTo(_usernameLabel.mas_right).offset(10);
-        make.right.mas_equalTo(self).offset(-20);
+        make.right.mas_equalTo(self).offset(-marginLeftRight);
         make.height.mas_equalTo(_usernameLabel);
     }];
     
     [_passwordLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(self.usernameLabel).offset(50);
-        make.left.mas_equalTo(self).offset(20);
+        make.top.mas_equalTo(self.usernameLabel.mas_bottom).offset(marginLeftRight);
+        make.left.mas_equalTo(self).offset(marginLeftRight);
         make.width.mas_equalTo(50);
         make.height.mas_equalTo(30);
     }];
@@ -95,8 +135,22 @@
     [_passwordTextField mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(_passwordLabel);
         make.left.mas_equalTo(_passwordLabel.mas_right).offset(10);
-        make.right.mas_equalTo(self).offset(-20);
+        make.right.mas_equalTo(self).offset(-marginLeftRight);
         make.height.mas_equalTo(_passwordLabel);
+    }];
+    
+    [_loginBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(_passwordLabel.mas_bottom).offset(50);
+        make.left.mas_equalTo(self).offset(marginLeftRight);
+        make.right.mas_equalTo(self.mas_right).offset(-marginLeftRight);
+        make.height.mas_equalTo(40);
+    }];
+    
+    [_registerBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(_loginBtn.mas_bottom).offset(marginLeftRight);
+        make.left.mas_equalTo(self.mas_left).offset(marginLeftRight);
+        make.right.mas_equalTo(self.mas_right).offset(-marginLeftRight);
+        make.height.mas_equalTo(_loginBtn);
     }];
     
     

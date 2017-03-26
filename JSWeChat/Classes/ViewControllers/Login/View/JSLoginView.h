@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void(^registerBtnClick)(UIButton *btn);
+typedef void(^loginBtnClick)(UIButton *btn);
+
 @interface JSLoginView : UIView
 
 
@@ -23,6 +26,13 @@
 @property (nonatomic, strong) UIButton *registerBtn;
 /** <#desc#> */
 @property (nonatomic, strong) UIButton *loginBtn;
+
+
+/** <#desc#> */
+@property (nonatomic, copy) registerBtnClick registerBlock;
+/** <#desc#> */
+@property (nonatomic, copy) loginBtnClick loginBlock;
+
 
 
 @end

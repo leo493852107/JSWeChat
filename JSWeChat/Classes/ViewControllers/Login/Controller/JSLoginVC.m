@@ -34,6 +34,12 @@
     
     _loginView = [[JSLoginView alloc] initWithFrame:[UIScreen mainScreen].bounds];
     [self.view addSubview:_loginView];
+    
+    
+//    _loginView.registerBlock = ^(UIButton *sender) {
+//        JSLog(@"111");
+//    };
+    
 }
 
 
