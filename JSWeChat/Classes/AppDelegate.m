@@ -10,9 +10,11 @@
 
 #import "AppDelegate.h"
 #import "JSLoginVC.h"
+#import "JSRootVC.h"
 
 
 @interface AppDelegate ()
+
 
 @end
 
@@ -24,10 +26,20 @@
     [[EaseMob sharedInstance] registerSDKWithAppKey:kEaseMobKey apnsCertName:nil otherConfig:@{kSDKConfigEnableConsoleLogger:[NSNumber numberWithBool:NO]}];
     [[EaseMob sharedInstance] application:application didFinishLaunchingWithOptions:launchOptions];
     
-    
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    self.window.rootViewController = [[JSLoginVC alloc] init];
+    
+    BOOL isAutoLogin = [[EaseMob sharedInstance].chatManager isAutoLoginEnabled];
+    if (!isAutoLogin) {
+        self.window.rootViewController = [[JSLoginVC alloc] init];
+    } else {
+        UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[[JSRootVC alloc] init]];
+        self.window.rootViewController = nav;
+    }
+    
+    
+    
     [self.window makeKeyAndVisible];
+    
     
     return YES;
 }
