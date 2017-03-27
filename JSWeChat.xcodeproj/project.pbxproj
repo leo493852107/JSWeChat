@@ -15,7 +15,13 @@
 		B3DF155E1E838FE6001EA6F6 /* JSNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DF155D1E838FE6001EA6F6 /* JSNetworkManager.m */; };
 		B3DF15631E839AEA001EA6F6 /* JSLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DF15611E839AEA001EA6F6 /* JSLoginVC.m */; };
 		B3DF15661E839AFD001EA6F6 /* JSLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DF15651E839AFD001EA6F6 /* JSLoginView.m */; };
-		B3DF156C1E87A971001EA6F6 /* JSRootVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DF156B1E87A971001EA6F6 /* JSRootVC.m */; };
+		B3DF15751E87E34C001EA6F6 /* JSBaseNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DF15741E87E34C001EA6F6 /* JSBaseNavController.m */; };
+		B3DF157E1E87E709001EA6F6 /* JSMeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DF157D1E87E709001EA6F6 /* JSMeVC.m */; };
+		B3DF15811E87E991001EA6F6 /* JSBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DF15801E87E991001EA6F6 /* JSBaseViewController.m */; };
+		B3DF15841E87ED59001EA6F6 /* JSHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DF15831E87ED59001EA6F6 /* JSHomeVC.m */; };
+		B3DF15871E87EE2B001EA6F6 /* JSRootVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DF15861E87EE2B001EA6F6 /* JSRootVC.m */; };
+		B3DF15901E88B5F5001EA6F6 /* JSMeView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DF158F1E88B5F5001EA6F6 /* JSMeView.m */; };
+		B3DF15961E88F141001EA6F6 /* JSCommonTools.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DF15951E88F141001EA6F6 /* JSCommonTools.m */; };
 		F4EA31C765689E496534329D /* libPods-JSWeChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A74D8E8D9613BAB91D256B79 /* libPods-JSWeChat.a */; };
 /* End PBXBuildFile section */
 
@@ -37,8 +43,20 @@
 		B3DF15611E839AEA001EA6F6 /* JSLoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSLoginVC.m; sourceTree = "<group>"; };
 		B3DF15641E839AFD001EA6F6 /* JSLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSLoginView.h; sourceTree = "<group>"; };
 		B3DF15651E839AFD001EA6F6 /* JSLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSLoginView.m; sourceTree = "<group>"; };
-		B3DF156A1E87A971001EA6F6 /* JSRootVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSRootVC.h; sourceTree = "<group>"; };
-		B3DF156B1E87A971001EA6F6 /* JSRootVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSRootVC.m; sourceTree = "<group>"; };
+		B3DF15731E87E34C001EA6F6 /* JSBaseNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSBaseNavController.h; sourceTree = "<group>"; };
+		B3DF15741E87E34C001EA6F6 /* JSBaseNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSBaseNavController.m; sourceTree = "<group>"; };
+		B3DF157C1E87E709001EA6F6 /* JSMeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSMeVC.h; sourceTree = "<group>"; };
+		B3DF157D1E87E709001EA6F6 /* JSMeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSMeVC.m; sourceTree = "<group>"; };
+		B3DF157F1E87E991001EA6F6 /* JSBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSBaseViewController.h; sourceTree = "<group>"; };
+		B3DF15801E87E991001EA6F6 /* JSBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSBaseViewController.m; sourceTree = "<group>"; };
+		B3DF15821E87ED59001EA6F6 /* JSHomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSHomeVC.h; sourceTree = "<group>"; };
+		B3DF15831E87ED59001EA6F6 /* JSHomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSHomeVC.m; sourceTree = "<group>"; };
+		B3DF15851E87EE2B001EA6F6 /* JSRootVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSRootVC.h; sourceTree = "<group>"; };
+		B3DF15861E87EE2B001EA6F6 /* JSRootVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSRootVC.m; sourceTree = "<group>"; };
+		B3DF158E1E88B5F5001EA6F6 /* JSMeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSMeView.h; sourceTree = "<group>"; };
+		B3DF158F1E88B5F5001EA6F6 /* JSMeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSMeView.m; sourceTree = "<group>"; };
+		B3DF15941E88F141001EA6F6 /* JSCommonTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSCommonTools.h; sourceTree = "<group>"; };
+		B3DF15951E88F141001EA6F6 /* JSCommonTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSCommonTools.m; sourceTree = "<group>"; };
 		C63FBD82A0C401897E872ECF /* Pods-JSWeChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSWeChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-JSWeChat/Pods-JSWeChat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -133,6 +151,8 @@
 		B3DF15531E82A137001EA6F6 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				B3DF15701E87E16E001EA6F6 /* Common */,
+				B3DF156D1E87E13C001EA6F6 /* Me */,
 				B3DF15671E87A930001EA6F6 /* Home */,
 				B3DF15541E82A137001EA6F6 /* Login */,
 			);
@@ -187,13 +207,71 @@
 		B3DF15681E87A930001EA6F6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				B3DF156A1E87A971001EA6F6 /* JSRootVC.h */,
-				B3DF156B1E87A971001EA6F6 /* JSRootVC.m */,
+				B3DF15821E87ED59001EA6F6 /* JSHomeVC.h */,
+				B3DF15831E87ED59001EA6F6 /* JSHomeVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
 		};
 		B3DF15691E87A930001EA6F6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B3DF156D1E87E13C001EA6F6 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				B3DF156E1E87E13C001EA6F6 /* Controller */,
+				B3DF156F1E87E13C001EA6F6 /* View */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		B3DF156E1E87E13C001EA6F6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B3DF157C1E87E709001EA6F6 /* JSMeVC.h */,
+				B3DF157D1E87E709001EA6F6 /* JSMeVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B3DF156F1E87E13C001EA6F6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B3DF158E1E88B5F5001EA6F6 /* JSMeView.h */,
+				B3DF158F1E88B5F5001EA6F6 /* JSMeView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B3DF15701E87E16E001EA6F6 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B3DF15711E87E16E001EA6F6 /* Controller */,
+				B3DF15721E87E16E001EA6F6 /* View */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B3DF15711E87E16E001EA6F6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B3DF15851E87EE2B001EA6F6 /* JSRootVC.h */,
+				B3DF15861E87EE2B001EA6F6 /* JSRootVC.m */,
+				B3DF15731E87E34C001EA6F6 /* JSBaseNavController.h */,
+				B3DF15741E87E34C001EA6F6 /* JSBaseNavController.m */,
+				B3DF157F1E87E991001EA6F6 /* JSBaseViewController.h */,
+				B3DF15801E87E991001EA6F6 /* JSBaseViewController.m */,
+				B3DF15941E88F141001EA6F6 /* JSCommonTools.h */,
+				B3DF15951E88F141001EA6F6 /* JSCommonTools.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B3DF15721E87E16E001EA6F6 /* View */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -324,12 +402,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3DF15871E87EE2B001EA6F6 /* JSRootVC.m in Sources */,
+				B3DF15961E88F141001EA6F6 /* JSCommonTools.m in Sources */,
 				B3DF154E1E829BE6001EA6F6 /* AppDelegate.m in Sources */,
+				B3DF15751E87E34C001EA6F6 /* JSBaseNavController.m in Sources */,
+				B3DF15841E87ED59001EA6F6 /* JSHomeVC.m in Sources */,
 				B3DF15311E8298F1001EA6F6 /* main.m in Sources */,
+				B3DF15811E87E991001EA6F6 /* JSBaseViewController.m in Sources */,
+				B3DF15901E88B5F5001EA6F6 /* JSMeView.m in Sources */,
+				B3DF157E1E87E709001EA6F6 /* JSMeVC.m in Sources */,
 				B3DF155E1E838FE6001EA6F6 /* JSNetworkManager.m in Sources */,
 				B3DF15661E839AFD001EA6F6 /* JSLoginView.m in Sources */,
 				B3DF15631E839AEA001EA6F6 /* JSLoginVC.m in Sources */,
-				B3DF156C1E87A971001EA6F6 /* JSRootVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

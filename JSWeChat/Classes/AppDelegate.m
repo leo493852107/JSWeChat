@@ -32,8 +32,8 @@
     if (!isAutoLogin) {
         self.window.rootViewController = [[JSLoginVC alloc] init];
     } else {
-        UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[[JSRootVC alloc] init]];
-        self.window.rootViewController = nav;
+        JSRootVC *rootVC = [[JSRootVC alloc] init];
+        self.window.rootViewController = rootVC;
     }
     
     

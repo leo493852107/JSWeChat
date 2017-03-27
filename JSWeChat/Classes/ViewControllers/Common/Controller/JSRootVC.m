@@ -7,6 +7,9 @@
 //
 
 #import "JSRootVC.h"
+#import "JSBaseNavController.h"
+#import "JSHomeVC.h"
+#import "JSMeVC.h"
 
 @interface JSRootVC ()
 
@@ -17,7 +20,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = [UIColor redColor];
+    
+    JSHomeVC *home = [[JSHomeVC alloc] init];
+    JSBaseNavController *homeNav = [[JSBaseNavController alloc] initWithRootViewController:home];
+    [self addChildViewController:homeNav];
+    
+    JSMeVC *me = [[JSMeVC alloc] init];
+    JSBaseNavController *meNav = [[JSBaseNavController alloc] initWithRootViewController:me];
+    [self addChildViewController:meNav];
     
 }
 

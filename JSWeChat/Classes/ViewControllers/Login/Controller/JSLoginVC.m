@@ -9,16 +9,15 @@
 #import "JSLoginVC.h"
 #import "JSLoginView.h"
 #import "JSRootVC.h"
+#import "JSCommonTools.h"
 
 @interface JSLoginVC ()
+
 
 
 @end
 
 
-@interface JSLoginVC ()
-
-@end
 
 @implementation JSLoginVC
 
@@ -38,15 +37,16 @@
     __weak typeof(_loginView) weakLoginView = _loginView;
     __weak typeof(self) weakSelf = self;
     _loginView.registerBlock = ^(UIButton *sender) {
-        EMError *error = nil;
-        BOOL isSuccess = [[EaseMob sharedInstance].chatManager registerNewAccount:weakLoginView.usernameTextField.text password:weakLoginView.passwordTextField.text error:&error];
-        if (isSuccess) {
-            JSLog(@"注册成功");
-            JSRootVC *rootVC = [[JSRootVC alloc] init];
-            [weakSelf.navigationController pushViewController:rootVC animated:YES];
-        } else {
-            JSLog(@"注册失败");
-        }
+
+        [[EaseMob sharedInstance].chatManager asyncRegisterNewAccount:weakLoginView.usernameTextField.text password:weakLoginView.passwordTextField.text withCompletion:^(NSString *username, NSString *password, EMError *error) {
+            if (!error) {
+                [JSCommonTools normalAlertWithTitle:@"注册成功" WithMessage:@"恭喜注册成功" WithPreferredStyle:UIAlertControllerStyleAlert WithController:weakSelf];
+            }
+            
+            [JSCommonTools normalAlertWithTitle:@"注册失败" WithMessage:[NSString stringWithFormat:@"%li %@", error.errorCode, error.description] WithPreferredStyle:UIAlertControllerStyleAlert WithController:weakSelf];
+            
+        } onQueue:nil];
+        
     };
     
     _loginView.loginBlock = ^(UIButton *sender) {
@@ -55,14 +55,13 @@
         EMError *error = nil;
         NSDictionary *loginInfo = [[EaseMob sharedInstance].chatManager loginWithUsername:weakLoginView.usernameTextField.text password:weakLoginView.passwordTextField.text error:&error];
         if (!error && loginInfo) {
-            JSLog(@"登录成功");
             // 设置自动登录
             [[EaseMob sharedInstance].chatManager setIsAutoLoginEnabled:YES];
             
             [weakSelf presentViewController:[[JSRootVC alloc] init] animated:YES completion:nil];
             
         } else {
-            JSLog(@"登录失败");
+            [JSCommonTools normalAlertWithTitle:@"登录失败" WithMessage:[NSString stringWithFormat:@"%li %@", error.errorCode, error.description] WithPreferredStyle:UIAlertControllerStyleAlert WithController:weakSelf];
         }
         
     };
